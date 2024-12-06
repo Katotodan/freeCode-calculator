@@ -1,0 +1,39 @@
+.calculator-container{
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  background-color: black;
+}
+
+.result-displayer{
+  height: 5rem;
+  width: 100%;
+  color: white;
+}
+.operation, .result{
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.25rem;
+  text-align: right;
+  font-size: large;
+}
+.btn-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  grid-auto-rows: minmax(70px, auto);
+}
+#clear, #zero{
+  grid-column: 1 / 3;
+}
+#clear{
+  background-color: rgb(122, 65, 65);
+}
+#zero{
+  background-color: bisque;
+}
+#equals{
+  grid-column: 4 / 4;
+  grid-row: 4 / 6;
+  background-color: cadetblue;
+}
